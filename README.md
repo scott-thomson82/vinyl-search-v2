@@ -1,1 +1,1 @@
-Vinyl-Search V 2.0
+Vinyl-Search V2.0
