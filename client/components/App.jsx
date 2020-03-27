@@ -1,9 +1,11 @@
 import React from 'react'
+import SearchBar from './SearchBar'
 
-const App = () => {
-  return (
-    <h1>React development has begun!</h1>
-  )
+
+class App extends React.Component {
+  render() {
+   return <SearchBar />
+  }
 }
 
 export default App
