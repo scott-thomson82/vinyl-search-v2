@@ -4,14 +4,13 @@ import discogs from '../components/apis/discogs'
 
 
 class App extends React.Component {
-  onTermSubmit = (term) => {
-    console.log(term)
-    discogs.get('/database/search', {
+  onTermSubmit = async term => {
+    const response = await discogs.get('/database/search', {
       params: {
         query: term
       }
     })
-
+      console.log(response.data.results)
   }
 
 
